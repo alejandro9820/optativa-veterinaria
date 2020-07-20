@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mascotas-Vip</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="assets/img/pet.ico"/>
+	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+        <SCRIPT  language=JavaScript> 
+			function asignarmedico() {
+                var doctor = prompt("¿Qué doctor sera asignado?", "");
+                if (prompt != null){
+                alert("El doctor asignado es: " + doctor + ", sera notificado al clinete por correo.");
+                }
+            }
+		</SCRIPT>
+        
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo"><img src="Logo-Mascotas-Vip-Retina.png" ></div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">Salir</a></li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+    </header>
+   <div class="seccion-info"> 
+       <h1> <strong>Bienvenido Administrador</strong></h1>
+   </div>
+    <section class="opciones">
+            <ul class="a"> 
+                <h2>Citas por aprobar</h1>
+                <li><a href="#opcionizquierda">11/07/2020</a></li>
+            </ul>
+            <div class="opcion-izquierda" id="opcionizquierda"> 
+                    <a href="javascript: history.go(-1)">X</a>      
+                    <div>
+                        <form onsubmit="return false">
+                            <div class="col-3">
+                               <label>Nombres
+                                <input value="Jose Alejandro"  tabindex="1" disabled>
+                               </label>
+                            </div>
+                            <div class="col-3">
+                               <label>Apellidos
+                                <input value="Alcivar Aguirre"  tabindex="2" disabled>
+                               </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Identificacion
+                                    <input value="1724464191" tabindex="2" disabled>
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Mascota
+                                      <select tabindex="5" disabled>
+                                        <option selected>Perro</option>
+                                        <option>Gato</option>
+                                      </select>
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Raza
+                                    <input value="Pastor aleman" type="text" tabindex="2" disabled>
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Celular
+                                    <input value="0987654321"  type="number" tabindex="2" disabled>
+                                </label>
+                            </div>
+            
+                            <div class="col-3">
+                                <label>Fecha cita
+                                    <input type="date" step="1" min="2020-07-10" max="2020-12-31" value="2020-07-11" disabled>
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Hora de la cita
+                                    <input type="time" max="20:00:00" min="09:00:00"  value="11:00:00" tabindex="3" disabled>
+                                </label>
+                            </div>
+                            <div class="col-3">
+                                <label>Correo 
+                                    <input value="alejo@gmail.com" type="email" tabindex="4" disabled>
+                                </label>
+                            </div>        
+                            <div class="col-submit">
+                                <button class="submitbtn" onclick="asignarmedico()">Aprobar Cita</button>
+                                <button class="submitbtn" onclick="alert('¡Ha rechazado la cita, sera enviado un correo al cliente')">Rechazar Cita</button>
+                            
+                            </div>
+                    </div>
+            </div>
+    </section>   
+    <section class="opciones1">
+            <ul class="a"> 
+                <h2>Buscar las citas</h1>
+                <br>
+                <label>Desde
+                    <input type="date" step="1" min="2020-07-10" max="2020-12-31" value="2020-07-10" >
+                </label>
+                <label>Hlasta
+                    <input type="date" step="1" min="2020-07-10" max="2020-12-31" value="2020-07-10" >
+                </label>
+                <li><a href="#opcionderecha">Buscar</a></li>
+                <div class="opcion-izquierda" id="opcionderecha">
+                        <a href="javascript: history.go(-1)">Salir</a>
+                        
+                        <ul class="citas-a">
+                            <li><a href="cita15.html" target="_blank">- Cita 15/07/2020</a></li>
+                            <li><a href="cita15.html" target="_blank">- Cita 18/07/2020</a></li>
+                            <li><a href="cita15.html" target="_blank">- Cita 25/07/2020</a></li>
+                            <li><a href="cita15.html" target="_blank">- Cita 28/07/2020</a></li>
+                        </ul>           
+                 </div>
+    </section>  
+    <section class="opciones2">
+            <ul class="b"> 
+                <h2>Todas las citas</h1>
+                    <li><a href="cita15.html" target="_blank">- Cita 15/07/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 18/07/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 25/07/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 28/07/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 15/08/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 18/08/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 25/08/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 28/08/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 15/09/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 18/09/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 25/09/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 28/10/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 15/10/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 18/10/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 25/10/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 28/11/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 15/11/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 18/11/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 25/11/2020</a></li>
+                    <li><a href="cita15.html" target="_blank">- Cita 28/11/2020</a></li>
+            </ul>
+    </section>
+</body>
+</html>

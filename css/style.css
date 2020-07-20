@@ -1,0 +1,414 @@
+@import url(normalize.css);
+@import url(bootstrap.css);
+@import url(font-awesome.min.css);
+@font-face {
+    font-family: 'OswaldRegular';
+    src: url('../fonts/oswald-regular.eot');
+    src: url('../fonts/oswald-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular.woff2') format('woff2'),
+         url('../fonts/oswald-regular.woff') format('woff'),
+         url('../fonts/oswald-regular.ttf') format('truetype'),
+         url('../fonts/oswald-regular.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url('../fonts/robotocondensed-light.eot');
+    src: url('../fonts/robotocondensed-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-light.woff2') format('woff2'),
+         url('../fonts/robotocondensed-light.woff') format('woff'),
+         url('../fonts/robotocondensed-light.ttf') format('truetype'),
+         url('../fonts/robotocondensed-light.svg#roboto_condensedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('../fonts/robotocondensed-regular.eot');
+    src: url('../fonts/robotocondensed-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-regular.woff2') format('woff2'),
+         url('../fonts/robotocondensed-regular.woff') format('woff'),
+         url('../fonts/robotocondensed-regular.ttf') format('truetype'),
+         url('../fonts/robotocondensed-regular.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	/*background-image: url('../assets/img/back2.jpg');
+	background-size: cover;
+	background-position: center;*/
+
+}
+.full-width{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.ShowBox{
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+.formated-section{
+	padding: 60px 0;
+}
+.font-oswald{
+	font-family: 'Cormorant Garamond';
+}
+/*=========== Barra de navegacion ===*/
+.NavBarP,
+.NavBarP-Logo,
+.NavBarP-Nav,
+.NavBarP-Nav > ul,
+.NavBarP-Nav > ul > li,
+.NavBarP-Nav > ul > li > a{
+	height: 50px;
+	line-height: 50px;
+}
+.NavBarP{
+	font-family: 'Cormorant Garamond';
+	font-size: 17px;
+	padding-bottom: 100px;
+}
+.NavBarP-Logo,
+.NavBarP-Nav{
+	position: absolute;
+	top: 0px;
+	background-color: #fff; 
+}
+.NavBarP-Logo{
+	left: 0;
+	width: 100%;
+	font-family: 'Cormorant Garamond';
+	padding-left: 10%
+}
+.NavBarP-Logo img{
+	width: 200px;
+	height: 100px;
+	position: static;
+}
+.NavBarP-Nav{
+	right: 0;
+	width: 60%;
+	padding-right: 20%;
+	padding-top: 30px;
+}
+.NavBarP-Nav > ul{
+	text-align: right;
+	padding-right: 10px;
+}
+.NavBarP-Nav > ul > li{
+	display: inline-block;
+	position: relative;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	padding-right: 3px;
+}
+.NavBarP-Nav > ul > li > a{
+	color: #000;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 0 7px;
+	transition: all .3s ease-in-out;
+	opacity: 0.6;
+}
+.NavBarP-Nav > ul > li > a:hover{
+	color: rgba(73,155,234,1);
+	opacity: 1;
+}
+/*====== Login ==*/
+.Login{
+	right: 0;
+	z-index: 77;
+	background: #fff;
+	color: #141414;
+	text-transform: none;
+	line-height: normal;
+	padding: 7px;
+	text-align: left;
+	font-size: 14px;
+	transition: all .3s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+.Login a{
+	text-decoration: none;
+	line-height: auto;
+	text-align: center;
+	display: block;
+	color:#fff;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../assets/img/banner3.jpg');
+	animation: banner 28s infinite linear;
+}
+@keyframes banner{
+	0%{
+		background-image: url('../assets/img/banner3.jpg');
+	}
+	25%{
+		background-image: url('../assets/img/banner3.jpg');
+	}
+
+
+	26%{
+		background-image: url('../assets/img/banner4.jpg');
+	}
+	50%{
+		background-image: url('../assets/img/banner4.jpg');
+	}
+
+
+	51%{
+		background-image: url('../assets/img/banner2.jpg');
+	}
+	75%{
+		background-image: url('../assets/img/banner2.jpg');
+	}
+	
+
+	76%{
+		background-image: url('../assets/img/banner1.jpg');
+	}
+	100%{
+		background-image: url('../assets/img/banner1.jpg');
+	}
+
+}
+
+.nosotros1{
+	position: relative;
+	width: 100%;
+	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+}
+.nosotros2{
+	padding-top: 20px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 150px;
+	width: 100%;
+	height: 150px;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	align-items: center;
+	top:10px;	
+	background-color:  rgba(73,155,234,1);
+}
+.nosotros2 h1{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Cormorant Garamond';
+}
+.ubicacion{
+	width: 90%;
+	margin: auto;
+	font-family: 'Cormorant Garamond';
+	text-align: center;
+	font-size: 38px;
+	color: rgba(0, 0, 0, 0.4);
+}
+.map-vid {
+	width: 90%;
+	margin: auto;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.mapa{
+	width: 90%;
+	padding-right: 20px;
+}
+.mapa iframe{
+	width: 100%;
+	height: 500px;
+}
+.mapa p{
+	font-size: 15px;
+	font-family: 'Cormorant Garamond';
+	color: rgba(0, 0, 0, 0.3);
+}
+.mapa1{
+	width: 100%;
+}
+.mapa1 h1{
+	font-family:'Cormorant Garamond' ;
+	font-size: 40px;
+	color: rgba(0, 0, 0, 0.4);
+}
+.mapa1 p{
+	font-size: 15px;
+	font-family: 'Cormorant Garamond';
+	text-align: justify;
+}
+.text-center{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+	.mapa1{
+		width: 90%;
+	}
+	.mapa1 h1{
+		font-family:'Cormorant Garamond' ;
+		font-size: 30px;
+		color: rgba(0, 0, 0, 0.4);
+	}	
+	.mapa1 iframe{
+		width: 100%;
+		height: 200px;
+	}
+	.mapa1 p{
+		font-size: 15px;
+		font-family: 'Cormorant Garamond';
+		text-align: justify;
+	}
+
+	.map-vid {
+		width: 90%;
+		margin: auto;
+		padding-bottom: 30px;
+		display: block;
+	}
+	.mapa{
+		margin: auto;
+		width: 100%;
+	}
+	.mapa iframe{
+		width: 100%;
+		height: 200px;
+	}
+	.mapa p{
+		font-size: 10px;
+		font-family: 'Cormorant Garamond';
+		color: rgba(0, 0, 0, 0.3);
+	}
+
+	.banner{
+		position: relative;
+		width: 100%;
+		height: 280px;
+		background-color: #F5F5F5;
+		background-size: cover;
+		background-position: center;
+		transition: all .1s ease-out;
+		background-image: url('../assets/img/odo1.jpg');
+		animation: banner 28s infinite linear;
+	}
+    .NavBarP-Logo{
+    	width: 100%;
+    	z-index: 99;
+    	border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+    .NavBarP-Nav{
+    	width: 100%;
+    	padding-top: 50px;
+    	height: 100%;
+    	z-index: 97;
+    	position: fixed;
+    	opacity: 0;
+    	pointer-events: none;
+    	transition: all .3s ease-in-out;
+    }
+    .NavBarP-Nav > ul{
+    	padding-right: 0;
+    	text-align: center;
+    	height: 100%;
+    }
+    .NavBarP-Nav > ul > li{
+		display: block;
+    }
+    .btn-menuMobile{
+    	position: absolute;
+    	z-index: 100;
+    	top: 0;
+    	right: 0;
+    	color: #000;
+    	height: 50px;
+    	width: 50px;
+    	cursor: pointer;
+    	line-height: 50px;
+    	font-size: 25px;
+    	transition: all .3s ease-in-out;
+    }
+    .btn-menuMobile:hover{
+		color: #0000FF;
+	}
+    .Login{
+    	position: fixed;
+    	height: 100%;
+    	top: 50px;
+    	padding-top: 50px;
+    	z-index: 100;
+	}
+	.text-center{
+		display: block;
+	}
+	
+}
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* col-lg */
+@media (min-width: 1200px) {
+    
+}
+
+/*col-sm col-md col-lg*/
+@media (min-width: 800px) {
+	.Login{
+		border: 1px solid #E1E1E1;
+		position: absolute;
+		top: 62px;
+		width: 250px;
+	}
+    .Login::after,
+	.Login::before {
+		bottom: 100%;
+		right: 14px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.Login::after {
+		border-color: rgba(136, 183, 213, 0);
+		border-bottom-color: #fff;
+		border-width: 10px;
+		margin-right: 0px;
+	}
+	.Login::before {
+		border-color: rgba(194, 225, 245, 0);
+		border-bottom-color: #E1E1E1;
+		border-width: 12px;
+		margin-right: -2px;
+	}
+}

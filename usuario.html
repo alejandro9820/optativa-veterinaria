@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mascotas-Vip</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="assets/img/pet.ico"/>
+	<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/usuario.css">
+		<SCRIPT  language=JavaScript> 
+				function entrar(){
+					var form = document.form;
+					var usuario = form.usuario.value;
+					var clave = form.clave.value;
+					 
+					 if(usuario == 'admin' && clave == '12345'){
+						alert("Bienvenido administrador");
+						window.open("admin.html");
+					 }else{
+							if(usuario == 'alejo' && clave == '12345'){
+								 alert("Bienvenido Usuario");
+									window.open("sesionusuario.html");
+							 }
+						alert("Datos incorrectos");
+					 }
+				}
+		</SCRIPT>
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo"><img src="Logo-Mascotas-Vip-Retina.png" ></div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">Inicio</a></li>
+				<li>
+					<a href="#!" class="btn-login"><i class="fa fa-user" aria-hidden="true"></i> Log In</a>
+					<div class="full-width Login">
+						<p class="text-center">
+							<form name="form" action="#">
+								<div class="form-group">
+									<label for="">Usuario</label>
+									<input type="text" class="form-control" name="usuario">
+								</div>
+								<div class="form-group">
+									<label for="password">Contraseña</label>
+									<input type="password" class="form-control" name="clave">
+								</div>
+								<br>
+								<p class="text-center">
+									<a href="#!" class="btn btn-danger btn-login" style="display:inline-block !important;">CANCELAR</a> <br><br>
+									<button class="btn btn-primary" onclick="entrar();">INICIAR SESION</button>
+								</p>
+							</form>
+				    	</p>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+    <div id="wrapper">
+            <h1>Crea tu usuario para agendar las citas</h1>
+            <form onsubmit="return false">
+            <div class="col-2">
+              <label>Nombres
+                  <input placeholder="Nombres completos" id="name" name="name" tabindex="1" type="text">
+              </label>
+            </div>
+            <div class="col-2">
+              <label>Apellidos
+                <input placeholder="Apellidos completos" id="company" name="company" tabindex="2" type="text">
+              </label>
+            </div>
+            <div class="col-3">
+              <label>Celular
+                <input placeholder="Número celular" id="phone" name="phone" tabindex="3" type="number">
+              </label>
+            </div>
+            <div class="col-3">
+              <label>Edad
+                <input placeholder="Escriba su edad" id="email" name="email" tabindex="4" type="number">
+              </label>
+            </div>         
+            <div class="col-3">
+                    <label>Dirección
+                      <input placeholder="Direccion de residencia" id="email" name="email" tabindex="4">
+                    </label>
+            </div> 
+            <div class="col-2">
+                    <label>Correo
+                        <input placeholder="Correo personal" id="name" name="name" tabindex="1" type="email">
+                    </label>
+            </div>
+            <div class="col-2">
+                    <label>Confirmar correo
+                      <input placeholder="Confirme su correo personal" id="company" name="company" tabindex="2" type="email">
+                    </label>
+            </div>
+            <div class="col-2">
+                        <label>Clave
+                            <input placeholder="Contraseña" id="name" name="name" tabindex="1" type="password">
+                        </label>
+            </div>
+            <div class="col-2">
+                        <label>Confirmar clave
+                          <input placeholder="Confirmar contrasña" id="company" name="company" tabindex="2" type="password">
+                        </label>
+            </div>                    
+                            
+            <div class="col-submit">
+              <button class="submitbtn" href="sesionusuario.html">  <a href="sesionusuario.html">Cerar Usuario</a></button>
+            </div>
+            
+            </form>
+    </div>
+	<footer class="footer-distributed">
+			<div class="footer-left">
+          		<img src="assets/img/Logo-Mascotas-Vip-Retina.png">
+				<h3>Mascotas<span> -Vip</span></h3>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>Calle 104 - Av 37,
+						  Sector los esteros</span>
+						Manta, Manabi</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+593 987 654 321</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a>mascotas-vip@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Consultorio Mascotas-Vip</span>
+					No pierdas la oportunidad de recibir los mejores servicios a tus mascotas.</p><br>
+				<div class="footer-company-about">
+					<p>- Mejores atenciones en veterinaria.</p>
+					<p>- Equipos de calidad.</p>
+					<p>- Doctores preparados.</p>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>
