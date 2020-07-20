@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/usuario.css">
-		<SCRIPT  language=JavaScript> 
+		<SCRIPT  language=JavaScript>
 				function entrar(){
 					var form = document.form;
 					var usuario = form.usuario.value;
 					var clave = form.clave.value;
-					 
+
 					 if(usuario == 'admin' && clave == '12345'){
 						alert("Bienvenido administrador");
 						window.open("admin.html");
@@ -84,12 +84,12 @@
               <label>Edad
                 <input placeholder="Escriba su edad" id="email" name="email" tabindex="4" type="number">
               </label>
-            </div>         
+            </div>
             <div class="col-3">
                     <label>Dirección
                       <input placeholder="Direccion de residencia" id="email" name="email" tabindex="4">
                     </label>
-            </div> 
+            </div>
             <div class="col-2">
                     <label>Correo
                         <input placeholder="Correo personal" id="name" name="name" tabindex="1" type="email">
@@ -109,12 +109,12 @@
                         <label>Confirmar clave
                           <input placeholder="Confirmar contrasña" id="company" name="company" tabindex="2" type="password">
                         </label>
-            </div>                    
-                            
-            <div class="col-submit">
-              <button class="submitbtn" href="sesionusuario.html">  <a href="sesionusuario.html">Cerar Usuario</a></button>
             </div>
-            
+
+            <div class="col-submit">
+              <button class="submitbtn" onclick="alert('Usuario creado correctamente')" href="sesionusuario.html" >Cerar Usuario</button>
+            </div>
+
             </form>
     </div>
 	<footer class="footer-distributed">
